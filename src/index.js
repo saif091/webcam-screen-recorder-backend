@@ -8,7 +8,7 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:["https://mern-recorder.onrender.com/"]}));
 
 app.use("/auth",userRouter);
 
